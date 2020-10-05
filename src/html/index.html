@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <% for (css in htmlWebpackPlugin.files.css) { %>
+    <link 
+    href="<%= htmlWebpackPlugin.files.css[css] %>"
+    rel="stylesheet">
+  <% } %>
+  <title>html template</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Converter</h1>
+    <form>
+      <div class="row">
+        <div class="col-md-4">
+          <input type="text" class="form-control" placeholder="First name">
+        </div>
+        <div class="col-md-1">
+          <select class="custom-select">
+            <option value="usd" selected>USD</option>
+            <option value="eur">EUR</option>
+            <option value="rub">RUB</option>
+          </select>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Last name">
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <% for (index in htmlWebpackPlugin.files.js) { %>
+    <script src="<%= htmlWebpackPlugin.files.js[index] %>" type="text/javascript"></script>
+  <% } %>
+</body>
+</html>
