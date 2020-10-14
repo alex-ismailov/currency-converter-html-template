@@ -13,27 +13,23 @@
 </head>
 <body>
   <div class="container">
-    <h1>Converter</h1>
-    <form>
-      <div class="row">
-        <input class="md-4" type="text">
-        <select class="custom-select md-1">
-          <option selected>Open this select menu</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select>
+    <section>
+      <div id="converter" class="row justify-content-center">
+        <form action="" class="row row-cols-4 align-items-center">
+          <input class="col" type="text">
+          <select class="col-2" name="" id="">
+            <option value="">пункт</option>
+            <option value="">пункт</option>
+          </select>
+          <div class="col-2 text-center">change</div>
+          <input class="col" type="text">
+          <select class="col-2" name="" id="">
+            <option value="">пункт</option>
+            <option value="">пункт</option>
+          </select>
+        </form>
       </div>
-      <div class="row">
-        <input class="md-4" type="text">
-        <select class="custom-select md-1">
-          <option selected>Open this select menu</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select>
-      </div>
-    </form>
+    </section>
   </div>
 
   <% for (index in htmlWebpackPlugin.files.js) { %>
