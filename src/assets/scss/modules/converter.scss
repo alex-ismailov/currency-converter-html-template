@@ -1,7 +1,14 @@
 .converter {
   &__input,
   &__select {
-    height: 30px;
+    height: 35px;
     font-size: 13px;
+    border: 1px solid #000;
+    border-radius: 4px;
+  }
+
+  &__select {
+    background: #fff;
+    padding: 0 5px;
   }
 }
