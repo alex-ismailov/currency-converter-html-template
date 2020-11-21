@@ -3,7 +3,6 @@
   align-items: center;
   box-sizing: border-box;
 
-  // @media()
   @include media('tableWidth') {
     flex-direction: column;
     justify-content: space-between;
@@ -27,7 +26,7 @@
 
     &__select {
       border-radius: 0 6px 6px 0;
-      margin-left: -5px;
+      margin-left: -4px;
       border-left: none;
     }
   }
